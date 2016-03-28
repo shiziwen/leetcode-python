@@ -18,9 +18,9 @@ class Solution(object):
             curr={}; j=0
             while j<wordNum:
                 word=s[i+j*wordLen:i+j*wordLen+wordLen]
-                if word not in word_dict: 
+                if word not in word_dict:
                     break
-                if word not in curr: 
+                if word not in curr:
                     curr[word]=1
                 else:
                     curr[word]+=1
