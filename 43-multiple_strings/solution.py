@@ -18,6 +18,9 @@ class Solution(object):
             if i < len(arr) - 1:
                 arr[i+1] += carry
             res.insert(0, str(digit))
-        if res[0] == '0' and len(res) > 0:
-            del res[0]
+        for i in range(len(res)):
+            if res[0] == '0' and len(res) > 1:
+                del res[0]
+            else:
+                break
         return ''.join(res)
